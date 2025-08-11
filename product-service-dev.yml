@@ -36,3 +36,9 @@ logging:
     com.customer_service: INFO
     org.springframework.web: WARN
     org.hibernate.SQL: WARN
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
