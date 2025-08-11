@@ -10,10 +10,10 @@ spring:
           predicates:
             - Path=/api/users/**
 
-        - id: account-service
-          uri: lb://account-service
+        - id: product-service
+          uri: lb://product-service
           predicates:
-            - Path=/api/accounts/**
+            - Path=/api/products/**
 
       default-filters:
         - StripPrefix=1
