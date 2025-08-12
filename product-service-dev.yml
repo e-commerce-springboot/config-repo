@@ -42,3 +42,8 @@ management:
     web:
       exposure:
         include: health,info
+# JWT Configuration
+jwt:
+  secret: 515f837f15e68ed242d72e795b1980af
+  expiration: 86400000  # 24 hours in milliseconds
+  issuer: ecommerce-app
